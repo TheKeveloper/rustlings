@@ -40,8 +40,7 @@ fn main() {
     let mut input = Cow::from(slice);
     match abs_all(&mut input) {
         // TODO
-        Cow::Owned(_) => println!("Owned"),
-        Cow::Borrowed(_) => println!("I own this slice!"),
+        Cow::Owned(_) => println!("I own this slice!"),
         _ => panic!("expected borrowed value"),
     }
 }
